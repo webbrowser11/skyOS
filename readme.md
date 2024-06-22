@@ -1,1 +1,1 @@
-the kernel for SCA
+Scratch Computing Alliance [SCA]
