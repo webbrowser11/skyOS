@@ -29,7 +29,7 @@ while True:
         print(echotxt)
     
     elif command == "helloworld.app":
-        script_path = os.path.join(os.getcwd(), 'helloworldapp.py')
+        script_path = os.path.join(os.getcwd(), 'apps', 'helloworldapp.py')
         if os.path.isfile(script_path):
             try:
                 subprocess.run([sys.executable, script_path], check=True)
@@ -38,7 +38,7 @@ while True:
             except Exception as e:
                 print(f"An unexpected error occurred: {e}")
         else:
-            print("helloworldapp.py not found in the current directory.")
+            print("helloworldapp.py not found in the 'apps' directory.")
         break
 
     elif command == "history":
