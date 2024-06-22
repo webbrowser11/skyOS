@@ -6,7 +6,6 @@ while True:
     print("help")
     print("info")
     print("echo")
-    echo
   elif command == "info":
     print("developed by the SCA all right reserved.")
     print("this kernel may not be reproduced in any way.")
