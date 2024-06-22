@@ -1,1 +1,2 @@
-Scratch Computing Alliance [SCA]
+operating system for the Scratch Computing Alliance [SCA]
+what are we doing?
