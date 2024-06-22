@@ -1,11 +1,15 @@
 import subprocess
 import os
+import sys
 
 print("Welcome to the SCA kernel. Lots of contributors worked on this!")
 print("Hope you find this program useful!")
 
+command_history = []
+
 while True:
     command = input("command: ").strip().lower()
+    command_history.append(command)
     
     if command == "help":
         print("Available commands:")
@@ -13,6 +17,7 @@ while True:
         print("info - show information about this program")
         print("echo - echo back what you type")
         print("helloworld.app - run the helloworld application")
+        print("history - show command history")
     
     elif command == "info":
         print("Developed by the SCA. All rights reserved.")
@@ -27,7 +32,7 @@ while True:
         script_path = os.path.join(os.getcwd(), 'helloworldapp.py')
         if os.path.isfile(script_path):
             try:
-                subprocess.run(['python', script_path], check=True)
+                subprocess.run([sys.executable, script_path], check=True)
             except subprocess.CalledProcessError as e:
                 print(f"Error executing the script: {e}")
             except Exception as e:
@@ -35,6 +40,11 @@ while True:
         else:
             print("helloworldapp.py not found in the current directory.")
         break
+
+    elif command == "history":
+        print("Command History:")
+        for index, cmd in enumerate(command_history, start=1):
+            print(f"{index}: {cmd}")
     
     else:
         print("Not a valid command. Type 'help' for a list of commands.")
