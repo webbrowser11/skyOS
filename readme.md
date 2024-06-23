@@ -6,3 +6,6 @@ but this is for the scratch computing alliance [SCA]
 
 ## work in progress!
 work on this project is STILL IN PROGRESS
+
+
+written from SCRATCH!!!
