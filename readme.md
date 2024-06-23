@@ -1,11 +1,20 @@
+# skyOS readme.md file
 open-source operating system for the Scratch Computing Alliance [SCA]
+
 ## description
-yeah the description is outdated i couldnt figure out how to chage it
-but this is for the scratch computing alliance [SCA]
-(its an Operating System (OS) though)
+an os built FROM SCRATCH!! its open-source easy to contribute
+to because it is written in python a very easy langauge! (to learn and program in)
+*thanks god guthub exists so the team can work on this.*
+how to contribute below!
+
+## contributing
+email:
+terpstragraham@gmail.com
+and wait for a notification that you can contribute.
+then click accept head over to this repository
+and help us work on skyOS!
 
 ## work in progress!
 work on this project is STILL IN PROGRESS
 
-
-written from SCRATCH!!!
+<ins>written from SCRATCH!<ins>
