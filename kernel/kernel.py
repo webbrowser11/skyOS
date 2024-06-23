@@ -17,8 +17,9 @@ while True:
         print("info - show information about this program")
         print("echo - echo back what you type")
         print("helloworld.app - run the helloworld application")
+        print("simpletext.app - run the simple text app by scratch_fakemon!")
         print("history - show command history")
-    
+
     elif command == "info":
         print("Developed by the SCA. All rights reserved.")
         print("This kernel may not be reproduced in any way.")
