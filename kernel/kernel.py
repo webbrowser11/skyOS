@@ -2,7 +2,7 @@ import subprocess
 import os
 import sys
 
-print("Welcome to the skyOS!. thank you to all those contributors worked on this!")
+print("Welcome to the skyOS! Thank you to all those contributors who worked on this!")
 print("Hope you find this OS useful!")
 
 command_history = []
@@ -19,7 +19,7 @@ while True:
         print("helloworld.app - run the helloworld application")
         print("simpletext.app - run the simple text app by scratch_fakemon!")
         print("history - show command history")
-
+    
     elif command == "info":
         print("Developed by the SCA. All rights reserved.")
         print("This kernel may not be reproduced in any way.")
@@ -30,7 +30,7 @@ while True:
         print(echotxt)
     
     elif command == "helloworld.app":
-        script_path = os.path.join(os.getcwd(), '..', 'apps', 'helloworldapp.py')
+        script_path = os.path.join(os.getcwd(), 'apps', 'helloworldapp.py')
         if os.path.isfile(script_path):
             try:
                 subprocess.run([sys.executable, script_path], check=True)
@@ -42,7 +42,7 @@ while True:
             print("helloworldapp.py not found in the 'apps' directory.")
       
     elif command == "simpletext.app":
-        script_path = os.path.join(os.getcwd(), '..', 'apps', 'simpletextapp.py')
+        script_path = os.path.join(os.getcwd(), 'apps', 'simpletextapp.py')
         if os.path.isfile(script_path):
             try:
                 subprocess.run([sys.executable, script_path], check=True)
@@ -52,7 +52,7 @@ while True:
                 print(f"An unexpected error occurred: {e}")
         else:
             print("simpletextapp.py not found in the 'apps' directory.")
-            
+    
     elif command == "history":
         print("Command History:")
         for index, cmd in enumerate(command_history, start=1):
