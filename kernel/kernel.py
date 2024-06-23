@@ -3,7 +3,7 @@ import os
 import sys
 
 print("Welcome to the skyOS!. thank you to all those contributors worked on this!")
-print("Hope you find this program useful!")
+print("Hope you find this OS useful!")
 
 command_history = []
 
@@ -40,7 +40,19 @@ while True:
                 print(f"An unexpected error occurred: {e}")
         else:
             print("helloworldapp.py not found in the 'apps' directory.")
-    
+      
+    elif command == "simpletext.app":
+        script_path = os.path.join(os.getcwd(), '..', 'apps', 'simpletextapp.py')
+        if os.path.isfile(script_path):
+            try:
+                subprocess.run([sys.executable, script_path], check=True)
+            except subprocess.CalledProcessError as e:
+                print(f"Error executing the script: {e}")
+            except Exception as e:
+                print(f"An unexpected error occurred: {e}")
+        else:
+            print("simpletextapp.py not found in the 'apps' directory.")
+            
     elif command == "history":
         print("Command History:")
         for index, cmd in enumerate(command_history, start=1):
