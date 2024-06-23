@@ -29,7 +29,7 @@ while True:
         print(echotxt)
     
     elif command == "helloworld.app":
-        script_path = os.path.join(os.getcwd(), 'apps', 'helloworldapp.py')
+        script_path = os.path.join(os.getcwd(), '..', 'apps', 'helloworldapp.py')
         if os.path.isfile(script_path):
             try:
                 subprocess.run([sys.executable, script_path], check=True)
