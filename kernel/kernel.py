@@ -2,7 +2,7 @@ import subprocess
 import os
 import sys
 
-print("Welcome to the SCA kernel. Lots of contributors worked on this!")
+print("Welcome to the skyOS!. thank you to all those contributors worked on this!")
 print("Hope you find this program useful!")
 
 command_history = []
