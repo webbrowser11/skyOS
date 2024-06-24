@@ -34,7 +34,6 @@ while True:
     
     elif command == "helloworld.app":
         script_path = os.path.join(apps_dir, 'helloworldapp.py')
-        print(f"Resolved path for helloworld.app: {script_path}")  # Debugging line
         if os.path.isfile(script_path):
             try:
                 subprocess.run([sys.executable, script_path], check=True)
@@ -47,7 +46,6 @@ while True:
       
     elif command == "simpletext.app":
         script_path = os.path.join(apps_dir, 'simpletextapp.py')
-        print(f"Resolved path for simpletext.app: {script_path}")  # Debugging line
         if os.path.isfile(script_path):
             try:
                 subprocess.run([sys.executable, script_path], check=True)
