@@ -18,3 +18,6 @@ and help us work on skyOS!
 work on this project is STILL IN PROGRESS
 
 <ins>written from SCRATCH!<ins>
+
+## website
+https://webbrowser11.github.io/skyOSweb/
