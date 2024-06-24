@@ -2,8 +2,11 @@ import subprocess
 import os
 import sys
 
-print("Welcome to skyOS! Thank you to all the contributors who worked on this!")
+print("Welcome to the skyOS! Thank you to all those contributors who worked on this!")
 print("Hope you find this OS useful!")
+
+# Assuming the apps directory is one level up from the KERNEL directory
+apps_dir = os.path.join(os.path.dirname(os.getcwd()), 'apps')
 
 command_history = []
 
@@ -13,12 +16,12 @@ while True:
     
     if command == "help":
         print("Available commands:")
-        print("  help - Show this help message")
-        print("  info - Show information about this program")
-        print("  echo - Echo back what you type")
-        print("  helloworld.app - Run the HelloWorld application")
-        print("  simpletext.app - Run the Simple Text app by scratch_fakemon")
-        print("  history - Show command history")
+        print("help - show this help message")
+        print("info - show information about this program")
+        print("echo - echo back what you type")
+        print("helloworld.app - run the helloworld application")
+        print("simpletext.app - run the simple text app by scratch_fakemon!")
+        print("history - show command history")
     
     elif command == "info":
         print("Developed by the SCA. All rights reserved.")
@@ -30,7 +33,8 @@ while True:
         print(echotxt)
     
     elif command == "helloworld.app":
-        script_path = os.path.join(os.getcwd(), 'apps', 'helloworldapp.py')
+        script_path = os.path.join(apps_dir, 'helloworldapp.py')
+        print(f"Resolved path for helloworld.app: {script_path}")  # Debugging line
         if os.path.isfile(script_path):
             try:
                 subprocess.run([sys.executable, script_path], check=True)
@@ -40,9 +44,10 @@ while True:
                 print(f"An unexpected error occurred: {e}")
         else:
             print("helloworldapp.py not found in the 'apps' directory.")
-    
+      
     elif command == "simpletext.app":
-        script_path = os.path.join(os.getcwd(), 'apps', 'simpletextapp.py')
+        script_path = os.path.join(apps_dir, 'simpletextapp.py')
+        print(f"Resolved path for simpletext.app: {script_path}")  # Debugging line
         if os.path.isfile(script_path):
             try:
                 subprocess.run([sys.executable, script_path], check=True)
