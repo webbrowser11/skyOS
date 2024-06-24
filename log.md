@@ -13,5 +13,8 @@ v1.1 added new app! simple text app (1:00-2:00)
 commits on 6/23/24:
 15.
 
+## 6/24/24
+quick bug fix (10:35)
+
 ## stay tuned
 stay tuned for more logs and update info!
