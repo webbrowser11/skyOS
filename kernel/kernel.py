@@ -2,7 +2,7 @@ import subprocess
 import os
 import sys
 
-print("Welcome to the skyOS! Thank you to all those contributors who worked on this!")
+print("Welcome to skyOS! Thank you to all the contributors who worked on this!")
 print("Hope you find this OS useful!")
 
 command_history = []
@@ -13,12 +13,12 @@ while True:
     
     if command == "help":
         print("Available commands:")
-        print("help - show this help message")
-        print("info - show information about this program")
-        print("echo - echo back what you type")
-        print("helloworld.app - run the helloworld application")
-        print("simpletext.app - run the simple text app by scratch_fakemon!")
-        print("history - show command history")
+        print("  help - Show this help message")
+        print("  info - Show information about this program")
+        print("  echo - Echo back what you type")
+        print("  helloworld.app - Run the HelloWorld application")
+        print("  simpletext.app - Run the Simple Text app by scratch_fakemon")
+        print("  history - Show command history")
     
     elif command == "info":
         print("Developed by the SCA. All rights reserved.")
@@ -40,7 +40,7 @@ while True:
                 print(f"An unexpected error occurred: {e}")
         else:
             print("helloworldapp.py not found in the 'apps' directory.")
-      
+    
     elif command == "simpletext.app":
         script_path = os.path.join(os.getcwd(), 'apps', 'simpletextapp.py')
         if os.path.isfile(script_path):
