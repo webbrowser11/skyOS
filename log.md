@@ -1,8 +1,17 @@
 # the log
 
 ## 6/22/24
+creation
 
 v0.1-0.9 the pre-creation and bug fixing stage (6/22/24 11:00am-5:00pm)
 v1.0 inatial realease (6/22/24 8:00pm)
 commits on 6/22/24:
-30.
+21.
+
+## 6/23/24
+v1.1 added new app! simple text app (1:00-2:00)
+commits on 6/23/24:
+15.
+
+## stay tuned
+stay tuned for more logs and update info!
