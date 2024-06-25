@@ -15,6 +15,7 @@ commits on 6/23/24:
 
 ## 6/24/24
 quick bug fix (10:35)
+lots of bug fixes (3:00-5:00)
 
 ## stay tuned
 stay tuned for more logs and update info!
