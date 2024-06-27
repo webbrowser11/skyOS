@@ -7,12 +7,12 @@ import pytz
 treevalue = 1
 print("Welcome to the skyOS! Thank you to all those contributors who worked on this!")
 print("Hope you find this OS useful!")
-print("SkyOS v1.4 OScore python3")
+print("SkyOS v1.6 OScore python3")
 
 # Assuming the apps directory is one level up from the KERNEL directory
 apps_dir = os.path.join(os.path.dirname(os.getcwd()), 'apps')
 
-command_history = [dude who uses this?!?]
+command_history = ["dude who uses this?!?"]
 
 while True:
     command = input("command: ").strip().lower()
@@ -53,7 +53,8 @@ while True:
 
     elif command == "tree":
         treevalue = input("tree:")
-        print("the value of tree is set.")
+        print("The value of tree is set.")
+    
     elif command == "tree -p":
         print(treevalue)
 
