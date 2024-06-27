@@ -19,7 +19,8 @@ v1.3
 not much...
 
 ## 6/26/24
-
+v1.4
+added a command with a new parameter.
 
 ## stay tuned
 stay tuned for more logs and update info!
