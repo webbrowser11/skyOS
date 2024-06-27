@@ -9,7 +9,7 @@ print("Hope you find this OS useful!")
 # Assuming the apps directory is one level up from the KERNEL directory
 apps_dir = os.path.join(os.path.dirname(os.getcwd()), 'apps')
 
-command_history = []
+command_history = [dude who uses this?!?]
 
 while True:
     command = input("command: ").strip().lower()
