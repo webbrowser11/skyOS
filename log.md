@@ -22,5 +22,9 @@ not much...
 v1.4
 added a command with a new parameter.
 
+## 6/27/24
+v1.6
+new app and updated kernel (12:00-12:30)
+
 ## stay tuned
 stay tuned for more logs and update info!
