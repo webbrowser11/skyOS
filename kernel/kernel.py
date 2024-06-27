@@ -30,7 +30,6 @@ while True:
         print("time - see the time in 12hr format")
     
     elif command == "time":
-
         # Specify the timezone.
         timezone = pytz.timezone('America/Los_Angeles')
 
