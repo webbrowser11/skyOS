@@ -21,7 +21,8 @@ while True:
         print("echo - echo back what you type")
         print("helloworld.app - run the helloworld application")
         print("simpletext.app - run the simple text app by scratch_fakemon!")
-        print("history - show command history")
+        print("tree - create a value to print out with a 0 parameter's for now.")
+        print("history - show all command history")
     
     elif command == "info":
         print("Developed by the SCA. All rights reserved.")
@@ -31,6 +32,10 @@ while True:
     elif command == "echo":
         echotxt = input("Echo what: ").strip()
         print(echotxt)
+
+    elif command == "tree":
+        treevalue = input("tree:")
+        print("the value of tree is set to", trevalue)
     
     elif command == "helloworld.app":
         script_path = os.path.join(apps_dir, 'helloworldapp.py')
