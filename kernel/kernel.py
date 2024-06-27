@@ -1,6 +1,8 @@
 import subprocess
 import os
 import sys
+from datetime import datetime
+import pytz
 
 treevalue = 1
 print("Welcome to the skyOS! Thank you to all those contributors who worked on this!")
@@ -25,6 +27,21 @@ while True:
         print("simpletext.app - run the simple text app by scratch_fakemon!")
         print("tree - create a value for tree. use the -p command to print the value.")
         print("history - show all command history")
+        print("time - see the time in 12hr format")
+    
+    elif command == "time":
+
+        # Specify the timezone.
+        timezone = pytz.timezone('America/Los_Angeles')
+
+        # Get the current time in the specified timezone
+        now = datetime.now(timezone)
+
+        # Format the date and time as a 12-hour clock with AM/PM
+        current_time = now.strftime("%I:%M %p")
+
+        # Print the current date and time
+        print(current_time)
     
     elif command == "info":
         print("Developed by the SCA. All rights reserved.")
