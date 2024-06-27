@@ -21,6 +21,3 @@ work on this project is STILL IN PROGRESS
 
 ## website
 https://webbrowser11.github.io/skyOSweb/
-
-https://docs.google.com/document/d/1LsF0fn_chJ6o8Tj5Oyb9qBn_G4PycFnOpVUpf5YfL9k/edit?pli=1
-link!!!
