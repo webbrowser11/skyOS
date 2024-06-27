@@ -2,6 +2,7 @@ import subprocess
 import os
 import sys
 
+treevalue = 1
 print("Welcome to the skyOS! Thank you to all those contributors who worked on this!")
 print("Hope you find this OS useful!")
 
@@ -21,7 +22,7 @@ while True:
         print("echo - echo back what you type")
         print("helloworld.app - run the helloworld application")
         print("simpletext.app - run the simple text app by scratch_fakemon!")
-        print("tree - create a value to print out with a 0 parameter's for now.")
+        print("tree - create a value for tree. use the -p command to print the value.")
         print("history - show all command history")
     
     elif command == "info":
@@ -35,8 +36,10 @@ while True:
 
     elif command == "tree":
         treevalue = input("tree:")
-        print("the value of tree is set to", trevalue)
-    
+        print("the value of tree is set.")
+    elif command == "tree -p":
+        print(treevalue)
+
     elif command == "helloworld.app":
         script_path = os.path.join(apps_dir, 'helloworldapp.py')
         if os.path.isfile(script_path):
