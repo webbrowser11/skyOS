@@ -25,9 +25,9 @@ while True:
         print("echo - echo back what you type")
         print("helloworld.app - run the helloworld application")
         print("simpletext.app - run the simple text app by scratch_fakemon!")
-        print("tree - create a value for tree. use the -p command to print the value.")
+        print("tree - a simple parameter. use the -p command to print the value. and -t to print for a certain amount of time!")
         print("history - show all command history")
-        print("time - see the time in 12hr format")
+        print("time - see the time in 12hr format with the los angles timezone chnagable timezones coming soon!")
     
     elif command == "time":
         # Specify the timezone.
@@ -57,6 +57,10 @@ while True:
     
     elif command == "tree -p":
         print(treevalue)
+
+    elif command == "tree -t":
+        treetime = input("how much prints?")
+        for i in range(treetime)
 
     elif command == "helloworld.app":
         script_path = os.path.join(apps_dir, 'helloworldapp.py')
