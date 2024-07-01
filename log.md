@@ -23,8 +23,8 @@ v1.4
 added a command with a new parameter.
 
 ## 6/27/24
-v1.6
-new app and updated kernel (12:00-12:30)
+v1.5 new app (11:30-12:00)
+v1.6 updated kernel (12:00-12:30)
 
 ## 6/28/24
 v1.7
