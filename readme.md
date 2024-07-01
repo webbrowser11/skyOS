@@ -14,10 +14,11 @@ and wait for a notification that you can contribute.
 then click accept head over to this repository
 and help us work on skyOS!
 
+## website
+https://webbrowser11.github.io/skyOSweb/
+also for more infromation on cotributing!
+
 ## work in progress!
 work on this project is STILL IN PROGRESS
 
 <ins>written from SCRATCH!<ins>
-
-## website
-https://webbrowser11.github.io/skyOSweb/
