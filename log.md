@@ -26,5 +26,13 @@ added a command with a new parameter.
 v1.6
 new app and updated kernel (12:00-12:30)
 
+## 6/28/24
+v1.7
+updated the kernel (added time command did some bug fixes, 1:00 - 2:00)
+
+## 6/30/24
+v1.8
+added a new paramter for the command TREE created on the 26th.
+
 ## stay tuned
 stay tuned for more logs and update info!
