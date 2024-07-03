@@ -7,7 +7,7 @@ import pytz
 treevalue = 1
 print("Welcome to the skyOS! Thank you to all those contributors who worked on this!")
 print("Hope you find this OS useful!")
-print("SkyOS v1.6 OScore python3")
+print("SkyOS v2.0 OScore python3")
 
 # Assuming the apps directory is one level up from the KERNEL directory
 apps_dir = os.path.join(os.path.dirname(os.getcwd()), 'apps')
@@ -28,8 +28,6 @@ while True:
         print("tree - create a value for tree. use the -p command to print the value.")
         print("history - show all command history")
         print("time - see the time in 12hr format")
-        print("shutdown - shutdown the system can only use this on windows/linux")
-        print("ping - can only ping 8.8.8.8 for now.")
     
     elif command == "time":
         # Specify the timezone.
@@ -45,10 +43,11 @@ while True:
         print(current_time)
     
     elif command == "info":
-        print("Developed by the SCA. All rights reserved.")
+        print("Developed by the SCA and Alter Net codes. All rights reserved.")
         print("This kernel may not be reproduced in any way.")
         print("You can archive (make sure the archive is public).")
-    
+        print("v2.0 python3, c23")
+        
     
     elif command == "echo":
         echotxt = input("Echo what: ").strip()
@@ -88,43 +87,6 @@ while True:
         print("Command History:")
         for index, cmd in enumerate(command_history, start=1):
             print(f"{index}: {cmd}")
-
-    elif command == "shutdown":
-        os_type = input("Are you using Windows or Linux? [W/L]: ").strip().lower()
-        if os_type == 'w':
-            script_path = os.path.join(os.getcwd(), 'shutdown', 'windowsshutdown.c')
-            if os.path.isfile(script_path):
-                # Compile the C program
-                compiled_path = os.path.join(os.getcwd(), 'shutdown', 'windowsshutdown.exe')
-                compile_command = f"gcc {script_path} -o {compiled_path}"
-                try:
-                    subprocess.run(compile_command, shell=True, check=True)
-                    # Run the compiled program
-                    subprocess.run([compiled_path], check=True)
-                except subprocess.CalledProcessError as e:
-                    print(f"Error compiling or executing the script: {e}")
-                except Exception as e:
-                    print(f"An unexpected error occurred: {e}")
-            else:
-                print("windowsshutdown.c not found in the 'shutdown' directory.")
-        elif os_type == 'l':
-            script_path = os.path.join(os.getcwd(), 'shutdown', 'linuxshutdown.c')
-            if os.path.isfile(script_path):
-                # Compile the C program
-                compiled_path = os.path.join(os.getcwd(), 'shutdown', 'linuxshutdown')
-                compile_command = f"gcc {script_path} -o {compiled_path}"
-                try:
-                    subprocess.run(compile_command, shell=True, check=True)
-                    # Run the compiled program
-                    subprocess.run([compiled_path], check=True)
-                except subprocess.CalledProcessError as e:
-                    print(f"Error compiling or executing the script: {e}")
-                except Exception as e:
-                    print(f"An unexpected error occurred: {e}")
-            else:
-                print("linuxshutdown.c not found in the 'shutdown' directory.")
-        else:
-            print("Invalid option. Please type 'W' for Windows or 'L' for Linux.")
     
     else:
         print("Not a valid command. Type 'help' for a list of commands.")
