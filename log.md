@@ -34,5 +34,13 @@ updated the kernel (added time command did some bug fixes, 1:00 - 2:00)
 v1.8
 added a new paramter for the command TREE created on the 26th.
 
+## 7/2/24
+v1.9 
+shutdown scripts
+
+## 7/3/24
+v2.0
+bug fix
+
 ## stay tuned
 stay tuned for more logs and update info!
