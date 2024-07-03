@@ -12,7 +12,7 @@ print("SkyOS v1.6 OScore python3")
 # Assuming the apps directory is one level up from the KERNEL directory
 apps_dir = os.path.join(os.path.dirname(os.getcwd()), 'apps')
 
-command_history = ["dude who uses this?!?"]
+command_history = []
 
 while True:
     command = input("command: ").strip().lower()
@@ -25,9 +25,10 @@ while True:
         print("echo - echo back what you type")
         print("helloworld.app - run the helloworld application")
         print("simpletext.app - run the simple text app by scratch_fakemon!")
-        print("tree - a simple parameter. use the -p command to print the value. and -t to print for a certain amount of time!")
+        print("tree - create a value for tree. use the -p command to print the value.")
         print("history - show all command history")
-        print("time - see the time in 12hr format with the los angles timezone chnagable timezones coming soon!")
+        print("time - see the time in 12hr format")
+        print("shutdown - shutdown the system (asks for OS type)")
     
     elif command == "time":
         # Specify the timezone.
@@ -53,14 +54,9 @@ while True:
 
     elif command == "tree":
         treevalue = input("tree:")
-        print("The value of tree is set.")
-    
+        print("the value of tree is set.")
     elif command == "tree -p":
         print(treevalue)
-
-    elif command == "tree -t":
-        treetime = input("how much prints?")
-        for i in range(treetime)
 
     elif command == "helloworld.app":
         script_path = os.path.join(apps_dir, 'helloworldapp.py')
@@ -90,8 +86,43 @@ while True:
         print("Command History:")
         for index, cmd in enumerate(command_history, start=1):
             print(f"{index}: {cmd}")
-    elif command == "E":
-        print("rush E")
+
+    elif command == "shutdown":
+        os_type = input("Are you using Windows or Linux? [W/L]: ").strip().lower()
+        if os_type == 'w':
+            script_path = os.path.join(os.getcwd(), 'shutdown', 'windowsshutdown.c')
+            if os.path.isfile(script_path):
+                # Compile the C program
+                compiled_path = os.path.join(os.getcwd(), 'shutdown', 'windowsshutdown.exe')
+                compile_command = f"gcc {script_path} -o {compiled_path}"
+                try:
+                    subprocess.run(compile_command, shell=True, check=True)
+                    # Run the compiled program
+                    subprocess.run([compiled_path], check=True)
+                except subprocess.CalledProcessError as e:
+                    print(f"Error compiling or executing the script: {e}")
+                except Exception as e:
+                    print(f"An unexpected error occurred: {e}")
+            else:
+                print("windowsshutdown.c not found in the 'shutdown' directory.")
+        elif os_type == 'l':
+            script_path = os.path.join(os.getcwd(), 'shutdown', 'linuxshutdown.c')
+            if os.path.isfile(script_path):
+                # Compile the C program
+                compiled_path = os.path.join(os.getcwd(), 'shutdown', 'linuxshutdown')
+                compile_command = f"gcc {script_path} -o {compiled_path}"
+                try:
+                    subprocess.run(compile_command, shell=True, check=True)
+                    # Run the compiled program
+                    subprocess.run([compiled_path], check=True)
+                except subprocess.CalledProcessError as e:
+                    print(f"Error compiling or executing the script: {e}")
+                except Exception as e:
+                    print(f"An unexpected error occurred: {e}")
+            else:
+                print("linuxshutdown.c not found in the 'shutdown' directory.")
+        else:
+            print("Invalid option. Please type 'W' for Windows or 'L' for Linux.")
     
     else:
         print("Not a valid command. Type 'help' for a list of commands.")
