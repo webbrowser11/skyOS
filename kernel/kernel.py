@@ -28,7 +28,8 @@ while True:
         print("tree - create a value for tree. use the -p command to print the value.")
         print("history - show all command history")
         print("time - see the time in 12hr format")
-        print("shutdown - shutdown the system (asks for OS type)")
+        print("shutdown - shutdown the system can only use this on windows/linux")
+        print("ping - can only ping 8.8.8.8 for now.")
     
     elif command == "time":
         # Specify the timezone.
@@ -43,10 +44,23 @@ while True:
         # Print the current date and time
         print(current_time)
     
+    elif command == "ping":
+        ip_list = ['8.8.8.8'
+        '8.8.4.4'
+        '1.1.1.1'
+        '4.4.4.4']
+        for ip in ip_list:
+            response = os.popen(f"ping {ip}").read()
+            if "Received = 4" in response:
+                print(f"UP {ip} Ping Successful, Host is UP!")
+            else:
+                print(f"DOWN {ip} Ping Unsuccessful, Host is DOWN.")
+    
     elif command == "info":
         print("Developed by the SCA. All rights reserved.")
         print("This kernel may not be reproduced in any way.")
         print("You can archive (make sure the archive is public).")
+    
     
     elif command == "echo":
         echotxt = input("Echo what: ").strip()
