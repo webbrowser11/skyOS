@@ -44,18 +44,6 @@ while True:
         # Print the current date and time
         print(current_time)
     
-    elif command == "ping":
-        ip_list = ['8.8.8.8'
-        '8.8.4.4'
-        '1.1.1.1'
-        '4.4.4.4']
-        for ip in ip_list:
-            response = os.popen(f"ping {ip}").read()
-            if "Received = 4" in response:
-                print(f"UP {ip} Ping Successful, Host is UP!")
-            else:
-                print(f"DOWN {ip} Ping Unsuccessful, Host is DOWN.")
-    
     elif command == "info":
         print("Developed by the SCA. All rights reserved.")
         print("This kernel may not be reproduced in any way.")
