@@ -90,6 +90,8 @@ while True:
         print("Command History:")
         for index, cmd in enumerate(command_history, start=1):
             print(f"{index}: {cmd}")
+    elif command == "E":
+        print("rush E")
     
     else:
         print("Not a valid command. Type 'help' for a list of commands.")
