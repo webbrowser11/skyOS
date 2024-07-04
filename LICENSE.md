@@ -1,6 +1,6 @@
 MIT License
 
-Copyright © 2024 Alter Net codes, SCA foundation
+Copyright © 2024 Alter Net codes, SCA foundation, the open-source community
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
