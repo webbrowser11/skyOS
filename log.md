@@ -42,5 +42,9 @@ shutdown scripts
 v2.0
 bug fix
 
+## 7/4/24
+v2.0
+did an update to the copyright notice.
+
 ## stay tuned
 stay tuned for more logs and update info!
