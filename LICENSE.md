@@ -1,6 +1,6 @@
 MIT License
 
-Copyright © 2024 webbrowser11
+Copyright © 2024 Alter Net codes, SCA foundation
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
