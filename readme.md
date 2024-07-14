@@ -4,7 +4,7 @@ open-source operating system for the Scratch Computing Alliance [SCA]
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" />
   <a href="https://webuild.community">
-    <img src="https://raw.githubusercontent.com/webuild-community/badge/master/svg/by.svg" alt="By Vietnamese" />
+    <img src="https://raw.githubusercontent.com/webuild-community/badge/master/svg/by.svg" alt="By ALter Net codes" />
   </a>
 </p>
 
