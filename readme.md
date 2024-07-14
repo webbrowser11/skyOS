@@ -1,6 +1,13 @@
 # skyOS readme.md file
 open-source operating system for the Scratch Computing Alliance [SCA]
 
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" />
+  <a href="https://webuild.community">
+    <img src="https://raw.githubusercontent.com/webuild-community/badge/master/svg/by.svg" alt="By Vietnamese" />
+  </a>
+</p>
+
 ## description
 an os built FROM SCRATCH!! its open-source easy to contribute
 to because it is written in python a very easy langauge! (to learn and program in)
